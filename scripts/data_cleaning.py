@@ -43,11 +43,7 @@ df_can.rename(columns = {"OdName": "Country", "AreaName": "Continent", "RegName"
 # Adding "Total" column that will sum all immigrants for each country.
 df_can["Total"] = df_can[list(range(1980,2014))].sum(axis = 1)
 
-# Changing index number and removing index number.
-df_can.set_index("Country", inplace = True)
-df_can.index.name = None
-
 
 """Saving cleaned file"""
-# df_can.to_csv("../data/cleaned_data.csv", index = False) # Saving cleaned file in csv format for easier use.
+df_can.to_csv("../data/cleaned_data.csv", index = False) # Saving cleaned file in csv format for easier use.
 
