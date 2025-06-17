@@ -1,4 +1,4 @@
-"""This is a script used for data reading, cleaning and extracting new file.
+"""This is a script used for data reading, basic exploration, cleaning and extracting new file.
 Some code was left commented as it was used ald left for reference.
 """
 
@@ -49,5 +49,5 @@ df_can.index.name = None
 
 
 """Saving cleaned file"""
-# df_can.to_excel("../data/cleaned_data.xlsx", index = False) # Saving cleaned file in xlsx format.
+# df_can.to_csv("../data/cleaned_data.csv", index = False) # Saving cleaned file in csv format for easier use.
 

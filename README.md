@@ -11,10 +11,13 @@ The project consists of cleaning data, data analysis and data modeling by using 
 
 
 _Folder "data":_
+- "Canada.xlsx" : File with input data used for analysis.
+- "cleaned_data.csv" : Cleaned file with data used for visualisation.
 
 
 _Folder "scripts":_
-
+- "data_cleaning.py" : Python file used for data cleaning, basic exploration of data and generating 'dleaned_data.csv'.
+- "data_visualisation.py" : 
 
 
 _Folder "outputs":_
