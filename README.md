@@ -13,7 +13,7 @@ The project consists of cleaning data, data analysis and data modeling by using 
 _Folder "data":_
 
 
-_Folder "notebooks":_
+_Folder "scripts":_
 
 
 
