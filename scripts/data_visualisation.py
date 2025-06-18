@@ -249,47 +249,50 @@ df_jap = df_can.loc[["Japan"],years].transpose()
 
 
 # Visualisation of a total contribution to immigration to Canada per continent in comparison to 1980 and 2013.
-fig = plt.figure()
-ax0 = fig.add_subplot(1, 2, 1)
-ax1 = fig.add_subplot(1, 2, 2)
-
-df_continents["1980"].plot(kind = "pie",
-                           figsize = (10, 6),
-                           autopct = "%1.1f%%",
-                           startangle = 90,
-                           shadow = False,
-                           labels = None,
-                           pctdistance = 1.12,
-                           colors = ["gold",
-                                     "lightcoral",
-                                     "yellowgreen",
-                                     "lightskyblue",
-                                     "lightgreen",
-                                     "pink"],
-                           explode = [0.1, 0, 0, 0, 0.1, 0.1],
-                           ax = ax0,
-                           )
-ax0.set_title("Immigration to Canada per Continent in 1980")
-ax0.axis("equal")
-ax0.legend(labels = df_continents.index, loc = "upper left", fontsize = 8)
-
-df_continents["2013"].plot(kind = "pie",
-                           figsize = (10, 6),
-                           autopct = "%1.1f%%",
-                           startangle = 90,
-                           shadow = False,
-                           labels = None,
-                           pctdistance = 1.12,
-                           colors = ["gold",
-                                     "lightcoral",
-                                     "yellowgreen",
-                                     "lightskyblue",
-                                     "lightgreen",
-                                     "pink"],
-                           explode = [0.1, 0, 0, 0, 0.1, 0.1],
-                           ax = ax1,
-                           )
-ax1.set_title("Immigration to Canada per Continent in 2013")
-ax1.axis("equal")
-
-plt.show()
+# fig = plt.figure()
+# ax0 = fig.add_subplot(1, 2, 1)
+# ax1 = fig.add_subplot(1, 2, 2)
+#
+# df_continents["1980"].plot(kind = "pie",
+#                            figsize = (13, 9),
+#                            autopct = "%1.1f%%",
+#                            startangle = 90,
+#                            shadow = False,
+#                            labels = None,
+#                            pctdistance = 1.12,
+#                            colors = ["gold",
+#                                      "lightcoral",
+#                                      "yellowgreen",
+#                                      "lightskyblue",
+#                                      "lightgreen",
+#                                      "pink"],
+#                            explode = [0.1, 0, 0, 0, 0.1, 0.15],
+#                            ax = ax0,
+#                            )
+# ax0.set_title("Immigration to Canada per Continent in 1980")
+# ax0.axis("equal")
+# ax0.set_ylabel("")
+# ax0.legend(labels = df_continents.index, loc = "upper left", fontsize = 7)
+#
+# df_continents["2013"].plot(kind = "pie",
+#                            figsize = (13, 9),
+#                            autopct = "%1.1f%%",
+#                            startangle = 90,
+#                            shadow = False,
+#                            labels = None,
+#                            pctdistance = 1.12,
+#                            colors = ["gold",
+#                                      "lightcoral",
+#                                      "yellowgreen",
+#                                      "lightskyblue",
+#                                      "lightgreen",
+#                                      "pink"],
+#                            explode = [0.1, 0, 0, 0, 0.1, 0.15],
+#                            ax = ax1,
+#                            )
+# ax1.set_title("Immigration to Canada per Continent in 2013")
+# ax1.set_ylabel("")
+# ax1.axis("equal")
+# plt.savefig("../outputs/continents_pie_immigration.png") # Saving results to file
+#
+# plt.show()

@@ -1,4 +1,4 @@
-**Project status**: In progress - initialized.
+**Project status**: In progress - visualisation.
 
 This project is a data analysis of a publicly available data from: 
 https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset
